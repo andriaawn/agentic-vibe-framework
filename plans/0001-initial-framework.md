@@ -82,8 +82,10 @@ agentic-vibe-framework/
    agent-instruction files and blocks automated writes). Storing them as
    `*.template` is cleaner anyway — it makes explicit that they're meant to be copied
    and renamed — and `bootstrap.sh` renames them on copy.
-2. **No root `AGENTS.md` in this repo** — same guard. The canonical version lives at
-   `templates/AGENTS.md.template`; a maintainer can copy it to the repo root manually.
+2. **Root `AGENTS.md` / `CLAUDE.md`** — added after the initial push (with the user's
+   explicit approval). They were initially omitted because the build environment's
+   tooling guards files with those exact names; with approval, they're now in place so
+   the repo fully dogfoods its own convention.
 3. **Repo location** — `/opt` is root-owned, so the working copy lives at
    `~/projects/agentic-vibe-framework`.
 

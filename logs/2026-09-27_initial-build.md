@@ -75,5 +75,8 @@ license: MIT · default branch: main · public: true
 - The build environment's tooling **blocks** writes to files named exactly
   `AGENTS.md` / `CLAUDE.md`. Rather than work around the guard (which we must not do),
   templates were stored with a `.template` suffix — arguably better UX anyway.
+- Root `AGENTS.md` / `CLAUDE.md` were later added **with the user's explicit approval**,
+  so the repo fully dogfoods its own convention (the guard is an approval gate, not an
+  absolute block).
 - This is a **dogfooding** repo: it follows the very workflow it documents (plan file
   here, log file here, handoff discipline, sanitize-before-commit).

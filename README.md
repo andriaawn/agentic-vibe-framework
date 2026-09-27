@@ -83,6 +83,7 @@ committed to the repo, so the reasoning is inspectable without the chat history.
 
 | Path | What it is |
 |---|---|
+| [`AGENTS.md`](AGENTS.md) | This repo's own working agreement (it follows the framework it documents) |
 | [`docs/`](docs/) | The methodology — 11 short chapters, from philosophy to anti-patterns |
 | [`templates/`](templates/) | Copy-paste files (stored as `*.template`, renamed on copy): `AGENTS.md`, `CLAUDE.md`, `HANDOFF.md`, `README.md`, `plan.md`, `log.md`, `ROADMAP.md`, `BACKLOG.md`, `SKILL.md` |
 | [`examples/stock-agent/`](examples/stock-agent/) | A **real** case study — the actual plan/log/roadmap/handoff from a live product, sanitized |
