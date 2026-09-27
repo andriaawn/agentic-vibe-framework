@@ -1,0 +1,88 @@
+# AGENTS.md
+
+> Working agreement for AI agents on this project. Read this file **first**, every
+> session, before touching anything. Keep it short and high-signal — it's loaded into
+> every session, so every line costs attention.
+
+## Project at a glance
+
+- **What it is:** <one line>
+- **Stack:** <languages / frameworks>
+- **Runs on:** <where — local? server? container?>
+- **Current state:** see [`HANDOFF.md`](HANDOFF.md)
+
+## Read before you work
+
+1. This file (`AGENTS.md`) — how we work.
+2. [`HANDOFF.md`](HANDOFF.md) — where we are right now.
+3. [`plans/ROADMAP.md`](plans/ROADMAP.md) — what's next.
+4. The newest file in [`logs/`](logs/) — what just happened.
+5. Any skill matching your task.
+
+**Then check the live state** (`git status`, `git log --oneline -5`, service health)
+before doing anything. Orient first.
+
+## The workflow (non-negotiable)
+
+```
+PLAN → APPROVE → IMPLEMENT → TEST → LOG → COMMIT
+```
+
+1. **PLAN** — write the plan to `plans/<slug>.md` **before any code**.
+2. **APPROVE** — **STOP** and wait for an explicit "yes". Silence is *not* approval.
+   An unrelated message is *not* approval. Your own confidence is *not* approval.
+3. **IMPLEMENT** — work autonomously; commit in small, reviewable steps.
+4. **TEST** — run tests/lint/types as part of the work. Prove tests can fail.
+5. **LOG** — write `logs/YYYY-MM-DD_<slug>.md` with root cause + verification.
+6. **COMMIT** — stage **exact paths** (never `git add -A`). Pushing needs a separate,
+   explicit approval.
+
+## Hard rules
+
+- **Never commit secrets.** No `.env`, tokens, keys, credentials. Check before staging.
+- **Never print secret values** in output, logs, or reports — mask them (`***`).
+- **Never run destructive commands** (drops, bulk deletes, `down -v`, migrations)
+  without a dry run against a throwaway copy, and never without explicit approval.
+- **Never type a password.** Use the vault / secret manager, or ask the user to enter it.
+- **Never relay an agent's self-report as fact** — verify side effects yourself.
+- **If it doesn't connect, let it go** — don't wire up a dead path to look finished.
+- **Don't touch files outside the task's scope.** Don't rewrite layouts/configs you
+  weren't asked to change.
+
+## Key commands
+
+```bash
+# install / setup
+<...>
+
+# run locally
+<...>
+
+# tests
+<...>
+
+# lint / type-check
+<...>
+
+# build / deploy
+<...>
+```
+
+## Conventions
+
+- **Language:** <e.g. commit messages in English, chat in <language>>
+- **Commit style:** <e.g. conventional commits: feat/fix/docs/chore>
+- **Branching:** <e.g. work on main, small commits>
+- **Style:** <formatter/linter, naming>
+
+## When to stop and ask
+
+- Before any destructive or irreversible action.
+- When a decision affects architecture or requirements beyond the approved plan.
+- When blocked on credentials, access, or a choice only the user can make.
+
+## Pitfalls (learned the hard way)
+
+- <e.g. "Cron's PATH is only /usr/bin:/bin — tools in ~/.local/bin are invisible.">
+- <e.g. "The backend isn't bind-mounted — changes need a rebuild.">
+- <add as you learn them; move detail to skills>

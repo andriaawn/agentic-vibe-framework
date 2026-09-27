@@ -1,0 +1,44 @@
+# Phase <N> — <short title>
+
+**Date:** <YYYY-MM-DD>
+**Status:** ⏳ awaiting approval
+**Owner:** <who>
+
+---
+
+## Goal
+
+<One or two sentences. What are we building, and why now?>
+
+## Decisions
+
+- <decision already made>
+- <decision made here, with the reasoning>
+- **Rejected:** <alternative> because <reason>
+
+## File / task breakdown
+
+- `path/to/file` — <what changes>
+- `path/to/other` — <what changes>
+
+## Acceptance criteria
+
+- [ ] <checkable statement — could be false>
+- [ ] <checkable statement>
+- [ ] <checkable statement>
+
+## Open questions
+
+- <anything needing the human's input before starting>
+- <if none, write "None.">
+
+## Out of scope
+
+- <explicitly not doing this here>
+
+---
+
+<!--
+When approved, change Status to "✅ approved <date>" and implement.
+When done, write the matching log in logs/YYYY-MM-DD_<slug>.md.
+-->

@@ -1,0 +1,80 @@
+# HANDOFF.md
+
+> **Read this first.** It answers: what is this, where does it run, what's the current
+> state, and where do I start? Written for a competent stranger (human or AI) who knows
+> nothing about the project.
+>
+> **Keep it current.** A stale handoff is worse than none — it actively misleads. If a
+> change makes this file wrong, fix it in the same session.
+
+**Last updated:** <YYYY-MM-DD>
+
+---
+
+## 0. 60-second overview
+
+- **Product:** <what it is, in a sentence or two>
+- **Users:** <who>
+- **Status:** <live / in development / paused>
+- **Live at:** <URL, if any>
+
+## 1. Infrastructure
+
+| Piece | Where / how | Notes |
+|---|---|---|
+| App | <server / URL> | |
+| Backend | <port, container> | |
+| Frontend | <port, container> | |
+| Database | <engine, name, where> | |
+| Cache | <redis etc.> | |
+| Proxy / ingress | <nginx / tunnel> | |
+| Jobs | <cron / scheduler> | |
+
+**Ports:** <frontend X, backend Y, ...>
+
+## 2. How we work
+
+See [`AGENTS.md`](AGENTS.md). The short version: **plan → approve → implement → test →
+log → commit**. No code before an approved plan.
+
+## 3. Current state
+
+- **Roadmap:** see [`plans/ROADMAP.md`](plans/ROADMAP.md)
+- **Key numbers:** <rows, users, size, whatever matters>
+- **Last deploy:** <what & when>
+- **Recent commits:** <a few, or "see git log">
+
+## 4. Open risks / blockers
+
+| # | Issue | Severity | Needs |
+|---|---|---|---|
+| 1 | <...> | high | <human / sudo / decision> |
+
+## 5. Where things live
+
+```
+<path>   — <what>
+```
+
+## 6. Secrets (names only — values live outside the repo)
+
+- `DATABASE_URL` → `.env`, mode 600
+- `<OTHER_SECRET>` → <where, e.g. password manager>
+
+## 7. First steps for a new session
+
+1. Read this file, then `AGENTS.md`, then `plans/ROADMAP.md`.
+2. Check it's alive:
+   ```bash
+   <health check commands>
+   git log --oneline -5 && git status
+   ```
+3. Load relevant skills.
+4. Read the newest file in `logs/`.
+5. Review open blockers (above).
+6. **DO NOT start coding.** Ask what to work on, write a plan, wait for approval.
+
+## 8. Pitfalls (learned the hard way)
+
+- <e.g. "Cron PATH is /usr/bin:/bin — ~/.local/bin tools are invisible.">
+- <e.g. "Backend isn't bind-mounted — rebuild after changes.">

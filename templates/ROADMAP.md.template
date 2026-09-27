@@ -1,0 +1,43 @@
+# Roadmap — what's left
+
+**Updated:** <YYYY-MM-DD>
+**Status:** <one line: live / in progress / paused>
+
+> One source of truth for "what's left". Each item links to its detail. Keep it
+> current — a stale roadmap misleads.
+
+## Done (don't redo)
+
+| Area | Evidence |
+|---|---|
+| <what> | <plan/commit link> |
+
+## Remaining — by priority
+
+### P1 — before real users
+
+| # | Item | Effort | Why it matters | Trigger |
+|---|---|---|---|---|
+| 1 | <...> | S/M/L | <...> | <when to start> |
+
+### P2 — after traction
+
+| # | Item | Effort | Why it matters | Trigger |
+|---|---|---|---|---|
+| 1 | <...> | S/M/L | <...> | <when to start> |
+
+### P3 — tech debt
+
+| # | Item | Effort | Why it matters | Trigger |
+|---|---|---|---|---|
+| 1 | <...> | S/M/L | <...> | <when to start> |
+
+## Deliberately deferred
+
+See [`BACKLOG.md`](BACKLOG.md).
+
+## Refused (don't re-propose without a new reason)
+
+| Item | Reason |
+|---|---|
+| <...> | <...> |

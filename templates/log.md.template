@@ -1,0 +1,44 @@
+# <Task title>
+
+**Date:** <YYYY-MM-DD>
+**Plan:** <link to plans/... or "n/a">
+**Goal (user's words):** "<verbatim if possible>"
+
+---
+
+## ROOT CAUSE
+
+<The actual problem — not the symptom. For a bug: what was *really* wrong. For a
+feature: what gap existed. If you can't state it, you haven't found it yet.>
+
+## FIX / WHAT WAS DONE
+
+<What changed and why this approach. Note any deviation from the plan.>
+
+## FILES CHANGED
+
+- `path/to/file` — <what changed>
+- `path/to/other` — <what changed>
+
+## VERIFICATION
+
+<Evidence, not confidence. Exact commands + observed results.>
+
+```
+$ <command>
+<output>
+```
+
+- live check: `<curl ...>` → <status / body>
+- tests: `<test command>` → <N passed>
+
+## STATUS
+
+<Done / blocked / awaiting approval. Anything still open.>
+
+---
+
+<!--
+Rules: write it AFTER the work. Root cause + verification are the important fields.
+Record failures too — a logged dead end saves the next person. Commit the log.
+-->

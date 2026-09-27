@@ -1,0 +1,70 @@
+# <Project Name>
+
+> <One-line description: what it is and who it's for.>
+
+<!--
+README = for humans deciding whether to use/contribute. Keep it stable.
+For operational/current state, use HANDOFF.md (updated constantly).
+-->
+
+## What it is
+
+<A short paragraph. What problem does it solve? Who is it for? Is it live?>
+
+## Features
+
+- <feature>
+- <feature>
+
+## Quick start
+
+```bash
+# 1. clone
+git clone <repo-url>
+cd <project>
+
+# 2. configure
+cp .env.example .env   # then fill in values
+
+# 3. run
+<command>
+```
+
+## Stack
+
+- **Backend:** <...>
+- **Frontend:** <...>
+- **Data:** <...>
+- **Deploy:** <...>
+
+## Project structure
+
+```
+<dir>/        — <what lives here>
+plans/        — written plans (before building)
+logs/         — task logs (after building)
+docs/         — detailed documentation
+HANDOFF.md    — current state (for continuing work)
+AGENTS.md     — working agreement (for AI agents)
+```
+
+## Development
+
+```bash
+# tests
+<command>
+
+# lint / types
+<command>
+
+# build
+<command>
+```
+
+## Contributing
+
+<How to contribute. See CONTRIBUTING.md.>
+
+## License
+
+<License — e.g. MIT. See LICENSE.>

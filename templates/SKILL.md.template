@@ -1,0 +1,36 @@
+---
+name: <skill-name>
+description: Use when <trigger>. <one-line behavior>.
+---
+
+# <Skill title>
+
+<!--
+A skill is procedural memory loaded ONLY when the task matches. Keep the trigger in
+the first line of the description so the agent knows when to load it.
+Write lessons, not logs: imperative rule + why. One rule per lesson.
+-->
+
+## When this applies
+
+<The situation that triggers loading this skill.>
+
+## Procedure
+
+1. <step>
+2. <step>
+3. <step>
+
+## Pitfalls (learned the hard way)
+
+- **<pitfall>** — <why it happens and how to avoid it>.
+- **<pitfall>** — <...>.
+
+## References
+
+- `references/<topic>.md` — <what's in it> (load only if needed)
+
+<!--
+Update this skill whenever you learn something new. A skill that never changes is
+dead weight. Delete or fix stale rules — a wrong rule is worse than none.
+-->

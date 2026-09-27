@@ -1,0 +1,32 @@
+# Backlog — deferred, with reasons
+
+> Ideas that are good but not *now*. Every item needs a reason for deferral and a
+> concrete trigger to start — otherwise it's just noise.
+
+## <Idea title>
+
+**Status:** ⏸ Deferred
+
+**Why deferred:** <the real reason — effort, dependency, low value now>
+
+**Trigger to start:** <the specific event that makes it worth doing>
+  e.g. "when >20 users ask for it" / "after email infra exists"
+
+**Recon already done (don't repeat):** <what you learned while considering it>
+
+---
+
+## <Another idea>
+
+**Status:** ⏸ Deferred
+**Why deferred:** <...>
+**Trigger to start:** <...>
+**Recon already done:** <...>
+
+---
+
+## Refused / deliberately shelved (don't re-propose without a new reason)
+
+| Item | Reason | Recorded in |
+|---|---|---|
+| <...> | <...> | <plan/log> |
