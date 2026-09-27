@@ -60,7 +60,15 @@ from a real audit, and the parallel-agent verification lesson. Added an optional
 
 ## STATUS
 
-Done — ready to commit. Public push is a separate, explicit approval.
+Done & **published**. Commit `9637c80`, pushed to
+`git@github.com:andriaawn/agentic-vibe-framework.git` (branch `main`).
+
+Verified live (unauthenticated):
+```
+$ curl -s -o /dev/null -w '%{http_code}' https://api.github.com/repos/andriaawn/agentic-vibe-framework
+200
+license: MIT · default branch: main · public: true
+```
 
 ## Notes / near-misses
 
